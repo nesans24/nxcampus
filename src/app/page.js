@@ -7,10 +7,10 @@ export default function Home() {
         <Image
           src="/nxcampus-logo.png"
           alt="NxCampus Logo"
-          width={160
-            
+          width={140
+
           }
-          height={170
+          height={140
           }
           className="shadow-lg bg-transparent"
           style={{ backgroundColor: "transparent" }}
