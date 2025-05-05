@@ -7,8 +7,8 @@ export default function Home() {
         <Image
           src="/nxcampus-logo.png"
           alt="NxCampus Logo"
-          width={450}
-          height={450}
+          width={180}
+          height={180}
           className="rounded shadow-lg"
         />
       </div>
