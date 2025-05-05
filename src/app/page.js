@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen p-8 flex flex-col items-start text-left bg-gray-50">
+    <main className="relative min-h-screen p-8 flex flex-col items-start text-left bg-black font-sans">
       <div className="absolute top-8 right-8">
         <Image
           src="/nxcampus-logo.png"
@@ -13,7 +13,7 @@ export default function Home() {
         />
       </div>
       <section className="w-full max-w-3xl border border-gray-300 p-6 rounded-lg mb-8 bg-white shadow">
-        <h1 className="text-5xl font-bold text-[#1E6B52]">Welcome to NxCampus!</h1>
+        <h1 className="text-5xl font-bold text-red-600">Welcome to NxCampus!</h1>
         <p className="text-lg text-gray-700 mt-4">
           Your student hub for finding apartments, budgeting tools, roommates, and campus resources — all in one place.
         </p>
