@@ -19,7 +19,7 @@ export default function Home() {
         </p>
       </section>
       <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg bg-white shadow self-end">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 font-medium tracking-wide">Quick Links</h2>
+        <h2 className="text-2xl font-semibold text-gray-800 mb-4 font-medium tracking-wide">UAB Quick Links</h2>
         <ul className="text-base font-medium text-[#1E6B52] space-y-3">
           <li>
             <a className="hover:underline hover:decoration-2 hover:text-[#14532d] transition-colors duration-200" href="https://padlock.idm.uab.edu/cas/login?service=https%3A%2F%2Fuab.instructure.com%2Flogin%2Fcas" target="_blank" rel="noopener noreferrer">
@@ -38,7 +38,7 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg bg-white shadow self-start mt-8">
+      <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg bg-white shadow self-start">
         <h2 className="text-2xl font-semibold text-gray-800 mb-4 font-medium tracking-wide">Apartment Complexes Near UAB</h2>
         <ul className="text-base font-medium text-[#1E6B52] space-y-3">
           <li>
