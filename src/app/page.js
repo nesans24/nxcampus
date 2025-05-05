@@ -8,7 +8,8 @@ export default function Home() {
           src="/nxcampus-logo.png"
           alt="NxCampus Logo"
           width={180}
-          height={180}
+          height={170
+          }
           className="shadow-lg bg-transparent"
           style={{ backgroundColor: "transparent" }}
         />
