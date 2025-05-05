@@ -9,7 +9,8 @@ export default function Home() {
           alt="NxCampus Logo"
           width={180}
           height={180}
-          className="rounded shadow-lg"
+          className="shadow-lg bg-transparent"
+          style={{ backgroundColor: "transparent" }}
         />
       </div>
       <section className="w-full max-w-3xl border border-gray-300 p-6 rounded-lg mb-8 bg-white shadow">
