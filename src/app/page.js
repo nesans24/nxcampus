@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="relative min-h-screen p-8 flex flex-col items-start text-left bg-black font-sans">
-      <div className="absolute top-0 right-0">
+      <div className="absolute top-[-10px] right-0">
         <Image
           src="/nxcampus-logo.png"
           alt="NxCampus Logo"
