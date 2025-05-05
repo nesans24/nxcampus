@@ -7,7 +7,9 @@ export default function Home() {
         <Image
           src="/nxcampus-logo.png"
           alt="NxCampus Logo"
-          width={180}
+          width={160
+            
+          }
           height={170
           }
           className="shadow-lg bg-transparent"
