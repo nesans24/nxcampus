@@ -136,9 +136,33 @@ export default function Home() {
           </ul>
         </section>
       </div>
+      <section className="w-full max-w-4xl border border-gray-300 p-6 rounded-lg shadow font-serif hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800 mb-8">
+        <h2 className="text-3xl font-semibold text-blue-500 mb-4 font-medium tracking-wide font-logo">📆 Upcoming Campus Events</h2>
+        <p className="text-white mb-4">
+          Want to promote your event? Submit it here:&nbsp;
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-DsDQVROjg3MAv7IUA7zkTDhbmnFVrAgMMCM09fQ9RgvMaA/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="underline text-blue-400 hover:text-blue-300">
+            Event Submission Form
+          </a>
+        </p>
+        <div className="overflow-hidden rounded-md border border-zinc-700 shadow-inner">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=05a7d07c508f55b2d540fdf471ab8f023fa5015477073349ef2d0ca0539f078%40group.calendar.google.com&ctz=America%2FChicago&mode=AGENDA"
+            style={{ border: "0" }}
+            width="100%"
+            height="600"
+            frameBorder="0"
+            scrolling="no"
+            title="Campus Events Calendar"
+          ></iframe>
+        </div>
+      </section>
       <footer className="mt-16 text-sm text-gray-600 border-t pt-4 w-full text-center">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1758909554616544"
-                crossOrigin="anonymous"></script>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1758909554616544"
+          crossOrigin="anonymous"
+        ></script>
       </footer>
       <Analytics />
     </main>
