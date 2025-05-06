@@ -1,169 +1,244 @@
-import Image from "next/image";
-import { Analytics } from "@vercel/analytics/react";
+'use client';
+
+import Image from 'next/image';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen p-8 flex flex-col items-start text-left bg-black font-sans dark:bg-zinc-900 dark:text-white">
-      <div className="absolute top-[-10px] right-0">
-        <Image
-          src="/nxcampus-logo.png"
-          alt="NxCampus Logo"
-          width={600
+    <main>
+      <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-900 to-black text-white px-6 py-8">
 
+        <section className="text-center mb-12">
+          <h1 className="text-5xl md:text-7xl font-bold font-serif text-blue-600 mb-4 flex items-center justify-center gap-2">
+            Welcome to
+            <Image
+              src="/nxcampus-logo.png"
+              alt="NxCampus Logo"
+              width={200}
+              height={60}
+              className="inline-block align-middle"
+            />
+            <span className="text-sm align-super ml-2 text-[#007A33] font-semibold">UAB edition</span>
+          </h1>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto text-white">
+            Your ultimate guide for student life, academics, housing, and campus events at UAB.
+          </p>
+        </section>
 
-          }
-          height={600
-          }
-          className="shadow-lg bg-transparent"
-          style={{ backgroundColor: "transparent" }}
-        />
-      </div>
-      <section className="w-full max-w-3xl border border-gray-300 p-6 rounded-lg mb-8 shadow hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800">
-        <h1 className="text-5xl font-bold text-blue-600 font-serif">
-          Welcome to NxCampus!
-          <span className="ml-3 align-super text-sm font-semibold" style={{ color: '#007A33' }}>
-            UAB edition
-          </span>
-        </h1>
-        <p className="text-lg text-white mt-4">
-          Your student hub for finding apartments, budgeting tools, roommates, and campus resources — all in one place.
-        </p>
-      </section>
-      <div className="flex gap-8 flex-wrap">
-        <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg shadow font-serif hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4 font-medium tracking-wide font-logo">🏫 UAB Quick Links</h2>
-          <ul className="text-base font-medium text-white space-y-3 font-logo">
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://padlock.idm.uab.edu/cas/login?service=https%3A%2F%2Fuab.instructure.com%2Flogin%2Fcas" target="_blank" rel="noopener noreferrer">
-                Canvas
-              </a>
-            </li>
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://padlock.idm.uab.edu/cas/login?service=https%3a%2f%2fidm.uab.edu%2fcgi-cas%2fssbsso%3finst%3dprod" target="_blank" rel="noopener noreferrer">
-                Blazer Portal
-              </a>
-            </li>
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://uab.campuslabs.com/engage/" target="_blank" rel="noopener noreferrer">
-                Engage
-              </a>
-            </li>
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://studentwellness.uab.edu/confirm.aspx" target="_blank" rel="noopener noreferrer">
-                UAB Wellness Portal
-              </a>
-            </li>
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://uab.givepulse.com/" target="_blank" rel="noopener noreferrer">
-                BlazerPulse
-              </a>
-            </li>
-            <li>
-              <a className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200" href="https://www.uab.edu/students/academics/academic-calendar/2025-2026" target="_blank" rel="noopener noreferrer">
-                Academic Calendar
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg shadow font-serif hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4 font-medium tracking-wide font-logo">📚 Study Resources</h2>
-          <ul className="text-base font-medium text-white space-y-3 font-logo">
-            <li>
-              <a href="https://www.chegg.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Chegg
-              </a>
-            </li>
-            <li>
-              <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                ChatGPT
-              </a>
-            </li>
-            <li>
-              <a href="https://lens.google/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Google Lens
-              </a>
-            </li>
-            <li>
-              <a href="https://www.sparknotes.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                SparkNotes
-              </a>
-            </li>
-            <li>
-              <a href="https://copilot.microsoft.com/chats/145kXUsT8HgyBFBifeD6C" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Microsoft Copilot
-              </a>
-            </li>
-          </ul>
-        </section>
-        <section className="w-full max-w-xl border border-gray-300 p-6 rounded-lg shadow font-serif hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4 font-medium tracking-wide font-logo">🏠 Apartment Complexes Near UAB</h2>
-          <ul className="text-base font-medium text-white space-y-3 font-logo">
-            <li>
-              <a href="https://www.crowneon10th.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Crowne on 10th
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tapestryparkbirmingham.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Tapestry
-              </a>
-            </li>
-            <li>
-              <a href="https://www.axelrowapartments.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Axel Row and Avondale Gardens
-              </a>
-            </li>
-            <li>
-              <a href="https://livemarshallon3rd.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Marshall on 3rd
-              </a>
-            </li>
-            <li>
-              <a href="https://livemarshallon5th.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Marshall on 5th
-              </a>
-            </li>
-            <li>
-              <a href="https://www.lumenbirmingham.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Lumen
-              </a>
-            </li>
-            <li>
-              <a href="https://www.alight-birmingham.com/" target="_blank" rel="noopener noreferrer" className="hover:underline hover:decoration-2 hover:text-blue-300 transition-colors duration-200">
-                Alight
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <section className="w-full max-w-4xl border border-gray-300 p-6 rounded-lg shadow font-serif hover:scale-[1.02] transition-transform duration-200 ease-in-out bg-zinc-800 mb-8">
-        <h2 className="text-3xl font-semibold text-blue-500 mb-4 font-medium tracking-wide font-logo">📆 Upcoming Campus Events</h2>
-        <p className="text-white mb-4">
-          Want to promote your event? Submit it here:&nbsp;
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-DsDQVROjg3MAv7IUA7zkTDhbmnFVrAgMMCM09fQ9RgvMaA/viewform?usp=header" target="_blank" rel="noopener noreferrer" className="underline text-blue-400 hover:text-blue-300">
-            Event Submission Form
-          </a>
-        </p>
-        <div className="overflow-hidden rounded-md border border-zinc-700 shadow-inner">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=05a7d07c508f55b2d540fdf471ab8f023fa5015477073349ef2d0ca0539f078%40group.calendar.google.com&ctz=America%2FChicago&mode=AGENDA"
-            style={{ border: "0" }}
-            width="100%"
-            height="600"
-            frameBorder="0"
-            scrolling="no"
-            title="Campus Events Calendar"
-          ></iframe>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <section className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-[1.02] hover:shadow-2xl">
+            <h2 className="text-2xl font-semibold text-blue-500 mb-6 font-serif">🏫 UAB Quick Links</h2>
+            <ul className="space-y-3 list-disc list-inside text-lg">
+              <li>
+                <a
+                  href="https://uab.instructure.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Canvas
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://blazerportal.uab.edu"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Blazer Portal
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://engage.uab.edu"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Engage
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wellness.uab.edu"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Wellness Portal
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://blazerpulse.uab.edu"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  BlazerPulse
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://uab.edu/academic-calendar"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Academic Calendar
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-[1.02] hover:shadow-2xl">
+            <h2 className="text-2xl font-semibold text-blue-500 mb-6 font-serif">📚 Study Resources</h2>
+            <ul className="space-y-3 list-disc list-inside text-lg">
+              <li>
+                <a
+                  href="https://www.chegg.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Chegg
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://chat.openai.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ChatGPT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://lens.google"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Lens
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.sparknotes.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SparkNotes
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.microsoft.com/en-us/microsoft-365/copilot"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Microsoft Copilot
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-[1.02] hover:shadow-2xl">
+            <h2 className="text-2xl font-semibold text-blue-500 mb-6 font-serif text-center">🏠 Apartment Complexes Near UAB</h2>
+            <ul className="space-y-3 list-disc list-inside text-lg">
+              <li>
+                <a
+                  href="https://crowneon10th.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Crowne on 10th
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tapestryuab.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Tapestry
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://axelrow.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Axel Row
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://marshallon3rd.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Marshall on 3rd
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://theunionuab.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Union
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://theblocuab.com"
+                  className="hover:underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Bloc
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
-      </section>
-      <footer className="mt-16 text-sm text-gray-600 border-t pt-4 w-full text-center">
-        {/* Google AdSense */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1758909554616544"
-          crossOrigin="anonymous"
-        ></script>
-      </footer>
+
+        <section className="mt-12 w-1/2 mx-auto bg-zinc-800 border border-zinc-700 p-10 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-[1.02] hover:shadow-2xl">
+          <h2 className="text-2xl font-semibold text-blue-500 mb-6 font-serif">📅 Campus Events Calendar</h2>
+          <div className="min-h-[900px]" data-tockify-component="calendar" data-tockify-calendar="nesan.siva"></div>
+          <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+          <p className="text-center text-blue-400 underline">
+            <a
+              href="https://tockify.com/tkf2/submitEvent/ec4647a4e40a4d73823ceb1852dc4711"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Submit an event to the calendar
+            </a>
+          </p>
+        </section>
+
+        <footer className="text-center mt-16 text-sm text-gray-400">
+          &copy; 2024 NxCampus. All rights reserved.
+          <script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            crossOrigin="anonymous"
+          ></script>
+        </footer>
+      </div>
       <Analytics />
     </main>
   );
