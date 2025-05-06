@@ -7,6 +7,11 @@ import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
   return (
     <main>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1758909554616544"
+        crossOrigin="anonymous"
+      />
       <div className="flex flex-col min-h-screen bg-gradient-to-br from-zinc-900 to-black text-white px-6 py-8">
 
         <section className="text-center mb-12">
@@ -228,11 +233,6 @@ export default function Home() {
 
         <footer className="text-center mt-16 text-sm text-gray-400">
           &copy; 2024 NxCampus. All rights reserved.
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            crossOrigin="anonymous"
-          ></script>
         </footer>
       </div>
       <Analytics />
