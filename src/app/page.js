@@ -194,22 +194,12 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://theunionuab.com"
+                  href="https://livemarshallon5th.com/"
                   className="hover:underline hover:text-blue-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  The Union
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://theblocuab.com"
-                  className="hover:underline hover:text-blue-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  The Bloc
+                  Marshall on 5th
                 </a>
               </li>
             </ul>
