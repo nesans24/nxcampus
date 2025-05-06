@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Script from 'next/script';
 import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
@@ -218,7 +219,12 @@ export default function Home() {
         <section className="mt-12 w-1/2 mx-auto bg-zinc-800 border border-zinc-700 p-10 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-[1.02] hover:shadow-2xl">
           <h2 className="text-2xl font-semibold text-blue-500 mb-6 font-serif">📅 Campus Events Calendar</h2>
           <div className="min-h-[900px]" data-tockify-component="calendar" data-tockify-calendar="nesan.siva"></div>
-          <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+          <Script
+            src="https://public.tockify.com/browser/embed.js"
+            strategy="lazyOnload"
+            data-cfasync="false"
+            data-tockify-script="embed"
+          />
           <p className="text-center text-blue-400 underline">
             <a
               href="https://tockify.com/tkf2/submitEvent/ec4647a4e40a4d73823ceb1852dc4711"
